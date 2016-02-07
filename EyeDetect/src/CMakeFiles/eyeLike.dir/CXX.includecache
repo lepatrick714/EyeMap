@@ -81,6 +81,8 @@ opencv2/imgproc/imgproc.hpp
 -
 iostream
 -
+cstdlib
+-
 queue
 -
 stdio.h

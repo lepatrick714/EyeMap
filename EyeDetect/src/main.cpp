@@ -3,6 +3,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 
 #include <iostream>
+#include <cstdlib>
 #include <queue>
 #include <stdio.h>
 #include <math.h>
@@ -30,6 +31,7 @@ cv::Mat gazeMat;
 cv::Point lastPoint;
 cv::Mat skinCrCbHist = cv::Mat::zeros(cv::Size(256, 256), CV_8UC1);
 int xres, yres;
+Point2f old;
 float yLine; //ymax, xmax, offx, offy;
 // bool calibrate, calibratetop, calibrateright;
 std::vector<float> xs, ys;
@@ -49,8 +51,9 @@ int main( int argc, const char** argv ) {
     
     xres = 1280;
     yres = 800;
-    
     gazeMat = Mat(yres, xres, CV_64F, cvScalar(255));
+    
+    old.y = yres - 1;
     
   CvCapture* capture;
   cv::Mat frame;
@@ -320,14 +323,18 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     if(abs(distInFromCenter + inHorizontal) < 6.39f){
         double ratio = (distInFromCenter + inHorizontal) / 6.39f;
         int pixelX = xres/2 + ratio * xres/2;
-        printf("%i\n", pixelX);
-        gazeMat.at<double>(50, pixelX) = 0;
-        gazeMat.at<double>(51, pixelX) = 0;
-        gazeMat.at<double>(52, pixelX) = 0;
-        gazeMat.at<double>(53, pixelX) = 0;
-        gazeMat.at<double>(54, pixelX) = 0;
+        printf("%d\n", pixelX);
+        int sign = 0;
+        (rand() % 2 == 0)? sign = 1: sign = -1;
+        int y = old.y + sign * (rand() % 50);
+        if(y < 0) y = -y;
+        else if(y >= yres) y = yres - (y - yres);
+        Point2f p(pixelX, y);
+        line(gazeMat, old, p, Scalar(0, 0, 0));
+        old = p;
+        printf("%d, %i\n", pixelX, y);
+        circle(gazeMat, p, 10, 200);
     }
-    
     
     
     //70,000 at 2.5 feet
@@ -353,12 +360,10 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
 //    float rightXRatio = rightXDiff / xmax;
 //    float pixelX = xres/2 + rightXRatio * xres/2;
     
-    
-    
 
     // printf("%f, %f\n", pixelX, pixelY);
     
-  imshow(face_window_name, faceROI);
+    imshow(face_window_name, faceROI);
 }
 
 cv::Mat findSkin (cv::Mat &frame) {
