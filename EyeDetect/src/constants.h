@@ -5,9 +5,9 @@
 const bool kPlotVectorField = false;
 
 // Size constants
-const int kEyePercentTop = 25;
+const int kEyePercentTop = 30;
 const int kEyePercentSide = 13;
-const int kEyePercentHeight = 30;
+const int kEyePercentHeight = 23;
 const int kEyePercentWidth = 35;
 
 // Preprocessing
