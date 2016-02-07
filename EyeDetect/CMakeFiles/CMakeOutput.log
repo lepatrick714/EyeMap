@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/Ishan/Downloads/eyeLike-master/CMakeFiles/3.4.3/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/3.4.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
@@ -23,34 +23,34 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is AppleClang, found in "/Users/Ishan/Downloads/eyeLike-master/CMakeFiles/3.4.3/CompilerIdCXX/a.out"
+The CXX compiler identification is AppleClang, found in "/Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/3.4.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_afe34/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_afe34.dir/build.make CMakeFiles/cmTC_afe34.dir/build
-Building C object CMakeFiles/cmTC_afe34.dir/testCCompiler.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_afe34.dir/testCCompiler.c.o   -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_afe34
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe34.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_afe34.dir/testCCompiler.c.o  -o cmTC_afe34  
+Run Build Command:"/usr/bin/make" "cmTC_9f7a2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9f7a2.dir/build.make CMakeFiles/cmTC_9f7a2.dir/build
+Building C object CMakeFiles/cmTC_9f7a2.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_9f7a2.dir/testCCompiler.c.o   -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_9f7a2
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f7a2.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9f7a2.dir/testCCompiler.c.o  -o cmTC_9f7a2  
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1aa8b/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1aa8b.dir/build.make CMakeFiles/cmTC_1aa8b.dir/build
-Building C object CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_1aa8b
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aa8b.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o  -o cmTC_1aa8b   
+Run Build Command:"/usr/bin/make" "cmTC_7657a/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7657a.dir/build.make CMakeFiles/cmTC_7657a.dir/build
+Building C object CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_7657a
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7657a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o  -o cmTC_7657a   
 Apple LLVM version 7.0.2 (clang-700.1.81)
 Target: x86_64-apple-darwin15.3.0
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_1aa8b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_7657a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-253.9
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
 Library search paths:
@@ -61,19 +61,19 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1aa8b/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1aa8b.dir/build.make CMakeFiles/cmTC_1aa8b.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_1aa8b]
-  ignore line: [/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aa8b.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o  -o cmTC_1aa8b   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7657a/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7657a.dir/build.make CMakeFiles/cmTC_7657a.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_7657a]
+  ignore line: [/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7657a.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o  -o cmTC_7657a   ]
   ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
   ignore line: [Target: x86_64-apple-darwin15.3.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_1aa8b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_7657a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -84,11 +84,11 @@ Parsed C implicit link information from above output:
     arg [-syslibroot] ==> ignore
     arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1aa8b] ==> ignore
+    arg [cmTC_7657a] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_1aa8b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_7657a.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib]
@@ -105,15 +105,15 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8d327/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8d327.dir/build.make CMakeFiles/cmTC_8d327.dir/build
-Building C object CMakeFiles/cmTC_8d327.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c11 -o CMakeFiles/cmTC_8d327.dir/feature_tests.c.o   -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.c
-Linking C executable cmTC_8d327
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d327.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8d327.dir/feature_tests.c.o  -o cmTC_8d327  
+Run Build Command:"/usr/bin/make" "cmTC_7d97e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7d97e.dir/build.make CMakeFiles/cmTC_7d97e.dir/build
+Building C object CMakeFiles/cmTC_7d97e.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c11 -o CMakeFiles/cmTC_7d97e.dir/feature_tests.c.o   -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7d97e
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d97e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7d97e.dir/feature_tests.c.o  -o cmTC_7d97e  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -123,15 +123,15 @@ Linking C executable cmTC_8d327
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52a09/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_52a09.dir/build.make CMakeFiles/cmTC_52a09.dir/build
-Building C object CMakeFiles/cmTC_52a09.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c99 -o CMakeFiles/cmTC_52a09.dir/feature_tests.c.o   -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.c
-Linking C executable cmTC_52a09
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52a09.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_52a09.dir/feature_tests.c.o  -o cmTC_52a09  
+Run Build Command:"/usr/bin/make" "cmTC_aa7cd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_aa7cd.dir/build.make CMakeFiles/cmTC_aa7cd.dir/build
+Building C object CMakeFiles/cmTC_aa7cd.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c99 -o CMakeFiles/cmTC_aa7cd.dir/feature_tests.c.o   -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.c
+Linking C executable cmTC_aa7cd
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa7cd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_aa7cd.dir/feature_tests.c.o  -o cmTC_aa7cd  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -141,15 +141,15 @@ Linking C executable cmTC_52a09
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f21a0/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f21a0.dir/build.make CMakeFiles/cmTC_f21a0.dir/build
-Building C object CMakeFiles/cmTC_f21a0.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c90 -o CMakeFiles/cmTC_f21a0.dir/feature_tests.c.o   -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f21a0
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f21a0.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f21a0.dir/feature_tests.c.o  -o cmTC_f21a0  
+Run Build Command:"/usr/bin/make" "cmTC_67390/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_67390.dir/build.make CMakeFiles/cmTC_67390.dir/build
+Building C object CMakeFiles/cmTC_67390.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c90 -o CMakeFiles/cmTC_67390.dir/feature_tests.c.o   -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.c
+Linking C executable cmTC_67390
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67390.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_67390.dir/feature_tests.c.o  -o cmTC_67390  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -157,31 +157,31 @@ Linking C executable cmTC_f21a0
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_00d07/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_00d07.dir/build.make CMakeFiles/cmTC_00d07.dir/build
-Building CXX object CMakeFiles/cmTC_00d07.dir/testCXXCompiler.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_00d07.dir/testCXXCompiler.cxx.o -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_00d07
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00d07.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_00d07.dir/testCXXCompiler.cxx.o  -o cmTC_00d07  
+Run Build Command:"/usr/bin/make" "cmTC_9f42a/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9f42a.dir/build.make CMakeFiles/cmTC_9f42a.dir/build
+Building CXX object CMakeFiles/cmTC_9f42a.dir/testCXXCompiler.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_9f42a.dir/testCXXCompiler.cxx.o -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9f42a
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f42a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9f42a.dir/testCXXCompiler.cxx.o  -o cmTC_9f42a  
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f114c/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f114c.dir/build.make CMakeFiles/cmTC_f114c.dir/build
-Building CXX object CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f114c
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f114c.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f114c   
+Run Build Command:"/usr/bin/make" "cmTC_e9590/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e9590.dir/build.make CMakeFiles/cmTC_e9590.dir/build
+Building CXX object CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e9590
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9590.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e9590   
 Apple LLVM version 7.0.2 (clang-700.1.81)
 Target: x86_64-apple-darwin15.3.0
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_f114c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_e9590 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-253.9
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
 Library search paths:
@@ -192,19 +192,19 @@ Framework search paths:
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f114c/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f114c.dir/build.make CMakeFiles/cmTC_f114c.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f114c]
-  ignore line: [/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f114c.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f114c   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e9590/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e9590.dir/build.make CMakeFiles/cmTC_e9590.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -o CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e9590]
+  ignore line: [/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9590.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e9590   ]
   ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
   ignore line: [Target: x86_64-apple-darwin15.3.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_f114c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -o cmTC_e9590 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -215,11 +215,11 @@ Parsed CXX implicit link information from above output:
     arg [-syslibroot] ==> ignore
     arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f114c] ==> ignore
+    arg [cmTC_e9590] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_f114c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e9590.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
     arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
@@ -237,15 +237,15 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_28511/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_28511.dir/build.make CMakeFiles/cmTC_28511.dir/build
-Building CXX object CMakeFiles/cmTC_28511.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++14 -o CMakeFiles/cmTC_28511.dir/feature_tests.cxx.o -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_28511
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28511.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_28511.dir/feature_tests.cxx.o  -o cmTC_28511  
+Run Build Command:"/usr/bin/make" "cmTC_8fd06/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8fd06.dir/build.make CMakeFiles/cmTC_8fd06.dir/build
+Building CXX object CMakeFiles/cmTC_8fd06.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++14 -o CMakeFiles/cmTC_8fd06.dir/feature_tests.cxx.o -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8fd06
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fd06.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8fd06.dir/feature_tests.cxx.o  -o cmTC_8fd06  
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -308,15 +308,15 @@ Linking CXX executable cmTC_28511
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f62c3/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f62c3.dir/build.make CMakeFiles/cmTC_f62c3.dir/build
-Building CXX object CMakeFiles/cmTC_f62c3.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++11 -o CMakeFiles/cmTC_f62c3.dir/feature_tests.cxx.o -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f62c3
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f62c3.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f62c3.dir/feature_tests.cxx.o  -o cmTC_f62c3  
+Run Build Command:"/usr/bin/make" "cmTC_36ded/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_36ded.dir/build.make CMakeFiles/cmTC_36ded.dir/build
+Building CXX object CMakeFiles/cmTC_36ded.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++11 -o CMakeFiles/cmTC_36ded.dir/feature_tests.cxx.o -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_36ded
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36ded.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_36ded.dir/feature_tests.cxx.o  -o cmTC_36ded  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -379,15 +379,15 @@ Linking CXX executable cmTC_f62c3
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/CMakeTmp
+Change Dir: /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9f947/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9f947.dir/build.make CMakeFiles/cmTC_9f947.dir/build
-Building CXX object CMakeFiles/cmTC_9f947.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++98 -o CMakeFiles/cmTC_9f947.dir/feature_tests.cxx.o -c /Users/Ishan/Downloads/eyeLike-master/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_9f947
-/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f947.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9f947.dir/feature_tests.cxx.o  -o cmTC_9f947  
+Run Build Command:"/usr/bin/make" "cmTC_a1d9d/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a1d9d.dir/build.make CMakeFiles/cmTC_a1d9d.dir/build
+Building CXX object CMakeFiles/cmTC_a1d9d.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk   -std=c++98 -o CMakeFiles/cmTC_a1d9d.dir/feature_tests.cxx.o -c /Users/Ishan/Hackpoly-2016/EyeDetect/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a1d9d
+/usr/local/Cellar/cmake/3.4.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1d9d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a1d9d.dir/feature_tests.cxx.o  -o cmTC_a1d9d  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -447,266 +447,3 @@ Linking CXX executable cmTC_9f947
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
-The system is: Linux - 3.16.0-38-generic - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
-Build flags: 
-Id flags: 
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
-Build flags: 
-Id flags: 
-
-The output was:
-0
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-
-The CXX compiler identification is GNU, found in "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
-
-Determining if the C compiler works passed with the following output:
-Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2901615825/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2901615825.dir/build.make CMakeFiles/cmTryCompileExec2901615825.dir/build
-make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2901615825.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2901615825.dir/testCCompiler.c.o   -c /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec2901615825
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2901615825.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2901615825.dir/testCCompiler.c.o  -o cmTryCompileExec2901615825 -rdynamic 
-make[1]: Leaving directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec23841247/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec23841247.dir/build.make CMakeFiles/cmTryCompileExec23841247.dir/build
-make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec23841247
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec23841247.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec23841247 -rdynamic  
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec23841247' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec23841247 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec23841247/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec23841247.dir/build.make CMakeFiles/cmTryCompileExec23841247.dir/build]
-  ignore line: [make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec23841247]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec23841247.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec23841247 -rdynamic  ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec23841247' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec23841247 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTryCompileExec23841247] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec23841247.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc_s]
-  remove lib [gcc]
-  remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
-  implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-  implicit fwks: []
-
-
-Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec4251337656/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4251337656.dir/build.make CMakeFiles/cmTryCompileExec4251337656.dir/build
-make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec4251337656.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec4251337656.dir/testCXXCompiler.cxx.o -c /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec4251337656
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4251337656.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec4251337656.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec4251337656 -rdynamic 
-make[1]: Leaving directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-
-
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1045958524/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1045958524.dir/build.make CMakeFiles/cmTryCompileExec1045958524.dir/build
-make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec1045958524
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1045958524.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1045958524 -rdynamic  
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1045958524' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1045958524 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp'
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1045958524/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1045958524.dir/build.make CMakeFiles/cmTryCompileExec1045958524.dir/build]
-  ignore line: [make[1]: Entering directory `/home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec1045958524]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1045958524.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1045958524 -rdynamic  ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1045958524' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1045958524 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTryCompileExec1045958524] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec1045958524.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
-  remove lib [gcc_s]
-  remove lib [gcc]
-  remove lib [gcc_s]
-  remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-  implicit fwks: []
-
-
