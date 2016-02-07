@@ -57,7 +57,7 @@ int main( int argc, const char** argv ) {
     
   CvCapture* capture;
   cv::Mat frame;
-
+    Mat comp = imread("result.png", 1);
   // Load the cascades
   if( !face_cascade.load( face_cascade_name ) ){ printf("--(!)Error loading face cascade, please change face_cascade_name in source code.\n"); return -1; };
 
@@ -174,7 +174,8 @@ int main( int argc, const char** argv ) {
         
       imshow("Gaze Map", gazeMat);
       imshow(main_window_name, debugImage);
-
+      imshow("Comparison", comp);
+        
       int c = cv::waitKey(10);
       if( (char)c == 'c' ) { break; }
 
