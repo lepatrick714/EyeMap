@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 2.0)
-project( eyeDetect )
-find_package( OpenCV REQUIRED)
-ADD_EXECUTABLE( eyeLike main.cpp findEyeCenter.cpp findEyeCenter.h findEyeCorner.cpp findEyeCorner.h constants.h helpers.cpp helpers.h)
-target_link_libraries( eyeDetect ${OpenCV_LIBS})
