@@ -458,33 +458,29 @@ opencv2/core/core_c.h
 
 /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/constants.h
 
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCenter.h
-opencv2/imgproc/imgproc.hpp
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/imgproc/imgproc.hpp
-
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCorner.h
-opencv2/imgproc/imgproc.hpp
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/imgproc/imgproc.hpp
-
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/main.cpp
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCorner.cpp
 opencv2/objdetect/objdetect.hpp
--
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/objdetect/objdetect.hpp
 opencv2/highgui/highgui.hpp
--
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
--
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/imgproc/imgproc.hpp
 iostream
 -
 queue
 -
 stdio.h
 -
-math.h
--
 constants.h
 /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/constants.h
-findEyeCenter.h
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCenter.h
+helpers.h
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/helpers.h
 findEyeCorner.h
 /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCorner.h
+
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCorner.h
+opencv2/imgproc/imgproc.hpp
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/opencv2/imgproc/imgproc.hpp
+
+/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/helpers.h
 
