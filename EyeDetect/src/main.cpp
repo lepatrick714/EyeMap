@@ -27,9 +27,10 @@ std::string face_window_name = "Capture - Face";
 cv::RNG rng(12345);
 cv::Mat debugImage;
 cv::Mat gazeMat;
+cv::Point lastPoint;
 cv::Mat skinCrCbHist = cv::Mat::zeros(cv::Size(256, 256), CV_8UC1);
 int xres, yres;
-float yLine, ymax, xmax, offx, offy;
+float yLine; //ymax, xmax, offx, offy;
 // bool calibrate, calibratetop, calibrateright;
 std::vector<float> xs, ys;
 
@@ -167,14 +168,12 @@ int main( int argc, const char** argv ) {
         printf(" --(!) No captured frame -- Break!");
         break;
       }
-        imshow("Gaze Map", gazeMat);
-      imshow(main_window_name,debugImage);
+        
+      imshow("Gaze Map", gazeMat);
+      imshow(main_window_name, debugImage);
 
       int c = cv::waitKey(10);
       if( (char)c == 'c' ) { break; }
-      if( (char)c == 'f' ) {
-        imwrite("frame.png",frame);
-      }
 
     }
       
@@ -290,8 +289,6 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     
     cv::Point2f centerRight(rightLeftCorner.x - (rightLeftCorner.x - rightRightCorner.x) / 2, rightLeftCorner.y +(rightLeftCorner.y - rightRightCorner.y) / 2);
     circle(debugFace, centerRight, 3, 1234);
-    
-    
     
     cv::Point2f centerFace(face.x + face.width / 2, face.y + leftRightCorner.y);
     cv::Point2f centerCam(frame_gray.cols/2, frame_gray.rows/2);
