@@ -27,11 +27,16 @@ std::string face_window_name = "Capture - Face";
 cv::RNG rng(12345);
 cv::Mat debugImage;
 cv::Mat skinCrCbHist = cv::Mat::zeros(cv::Size(256, 256), CV_8UC1);
+int yLine, xres, yres;
+std::vector<float> xmid, ymid;
 
 /**
  * @function main
  */
 int main( int argc, const char** argv ) {
+    xres = 1980;
+    yres = 1080;
+    
   CvCapture* capture;
   cv::Mat frame;
 
@@ -64,7 +69,8 @@ int main( int argc, const char** argv ) {
       // mirror it
       cv::flip(frame, frame, 1);
       frame.copyTo(debugImage);
-
+      yLine = frame.rows / 2;
+      // printf("%i\n", yLine);
       // Apply the classifier to the frame
       if( !frame.empty() ) {
         detectAndDisplay( frame );
@@ -83,6 +89,18 @@ int main( int argc, const char** argv ) {
       }
 
     }
+      float aveY = 0;
+      for(int i = 0; i < ymid.size(); i++)
+          aveY+=ymid[i];
+      aveY = aveY / ymid.size();
+      
+      float aveX = 0;
+      for(int i = 0; i < xmid.size(); i++)
+          aveX+=xmid[i];
+      aveX = aveX / xmid.size();
+      
+      printf("%f, %f\n", aveX, aveY);
+      
   }
 
   releaseCornerKernels();
@@ -147,7 +165,6 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
   circle(debugFace, leftPupil, 3, 1234);
 
   //-- Find Eye Corners
-  if (kEnableEyeCorner) {
     cv::Point2f leftRightCorner = findEyeCorner(faceROI(leftRightCornerRegion), true, false);
     leftRightCorner.x += leftRightCornerRegion.x;
     leftRightCorner.y += leftRightCornerRegion.y;
@@ -164,8 +181,33 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     circle(faceROI, leftLeftCorner, 3, 200);
     circle(faceROI, rightLeftCorner, 3, 200);
     circle(faceROI, rightRightCorner, 3, 200);
-  }
-
+    
+//    float heightDiff = -1 * (face.y + rightRightCorner.y - yLine);
+//  // printf("%f\n", -1 * (face.y + rightRightCorner.y - yLine));
+//    cv::Point2f compPointLeft(leftLeftCorner.x - (leftLeftCorner.x - leftRightCorner.x) / 2, leftLeftCorner.y +(leftLeftCorner.y - leftRightCorner.y) / 2 - heightDiff * 0.12f);
+//    printf("%f\n", heightDiff);
+//    printf("%f vx. %f\n", leftLeftCorner.y, compPointLeft.y);
+//    circle(debugFace, compPointLeft, 3, 1234);
+    
+    cv::Point2f centerLeft(leftLeftCorner.x - (leftLeftCorner.x - leftRightCorner.x) / 2, leftLeftCorner.y +(leftLeftCorner.y - leftRightCorner.y) / 2);
+    circle(debugFace, centerLeft, 3, 1234);
+    
+    cv::Point2f centerRight(rightLeftCorner.x - (rightLeftCorner.x - rightRightCorner.x) / 2, rightLeftCorner.y +(rightLeftCorner.y - rightRightCorner.y) / 2);
+    circle(debugFace, centerRight, 3, 1234);
+    
+    float rightYDiff = -(rightPupil.y - centerRight.y) - 6;
+    float rightYRatio = rightYDiff / 5.0f;
+    float pixelY = yres/2 + rightYRatio * yres/2;
+    
+    float rightXDiff = rightPupil.x - centerRight.x + 2.5;
+    float rightXRatio = rightXDiff / 3.5f;
+    float pixelX = xres/2 + rightXRatio * xres/2;
+    
+    xmid.push_back(pixelX);
+    ymid.push_back(pixelY);
+    
+    printf("%f, %f\n", pixelX, pixelY);
+    
   imshow(face_window_name, faceROI);
 //  cv::Rect roi( cv::Point( 0, 0 ), faceROI.size());
 //  cv::Mat destinationROI = debugImage( roi );
@@ -210,7 +252,7 @@ void detectAndDisplay( cv::Mat frame ) {
   //cv::pow(frame_gray, CV_64F, frame_gray);
   //-- Detect faces
   face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0|CV_HAAR_SCALE_IMAGE|CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(150, 150) );
-//  findSkin(debugImage);
+  //  findSkin(debugImage);
 
   for( int i = 0; i < faces.size(); i++ )
   {
