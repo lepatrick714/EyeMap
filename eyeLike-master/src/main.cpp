@@ -20,7 +20,7 @@ void detectAndDisplay( cv::Mat frame );
 
 /** Global variables */
 //-- Note, either copy these two files from opencv/data/haarscascades to your current folder, or change these locations
-cv::String face_cascade_name = "res/haarcascade_frontalface_alt.xml";
+cv::String face_cascade_name = "haarcascade_frontalface_alt.xml";
 cv::CascadeClassifier face_cascade;
 std::string main_window_name = "Capture - Face detection";
 std::string face_window_name = "Capture - Face";
@@ -38,18 +38,19 @@ int main( int argc, const char** argv ) {
   // Load the cascades
   if( !face_cascade.load( face_cascade_name ) ){ printf("--(!)Error loading face cascade, please change face_cascade_name in source code.\n"); return -1; };
 
-  cv::namedWindow(main_window_name,CV_WINDOW_NORMAL);
-  cv::moveWindow(main_window_name, 400, 100);
-  cv::namedWindow(face_window_name,CV_WINDOW_NORMAL);
-  cv::moveWindow(face_window_name, 10, 100);
-  cv::namedWindow("Right Eye",CV_WINDOW_NORMAL);
-  cv::moveWindow("Right Eye", 10, 600);
-  cv::namedWindow("Left Eye",CV_WINDOW_NORMAL);
-  cv::moveWindow("Left Eye", 10, 800);
-  cv::namedWindow("aa",CV_WINDOW_NORMAL);
-  cv::moveWindow("aa", 10, 800);
-  cv::namedWindow("aaa",CV_WINDOW_NORMAL);
-  cv::moveWindow("aaa", 10, 800);
+  // vector <
+  // cv::namedWindow(main_window_name,CV_WINDOW_NORMAL);
+  // cv::moveWindow(main_window_name, 400, 100);
+  // cv::namedWindow(face_window_name,CV_WINDOW_NORMAL);
+  // cv::moveWindow(face_window_name, 10, 100);
+  // cv::namedWindow("Right Eye",CV_WINDOW_NORMAL);
+  // cv::moveWindow("Right Eye", 10, 600);
+  // cv::namedWindow("Left Eye",CV_WINDOW_NORMAL);
+  // cv::moveWindow("Left Eye", 10, 800);
+  // cv::namedWindow("aa",CV_WINDOW_NORMAL);
+  // cv::moveWindow("aa", 10, 800);
+  // cv::namedWindow("aaa",CV_WINDOW_NORMAL);
+  // cv::moveWindow("aaa", 10, 800);
 
   createCornerKernels();
   ellipse(skinCrCbHist, cv::Point(113, 155), cv::Size(23, 15),
@@ -101,8 +102,12 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
   int eye_region_width = face.width * (kEyePercentWidth/100.0);
   int eye_region_height = face.width * (kEyePercentHeight/100.0);
   int eye_region_top = face.height * (kEyePercentTop/100.0);
+
+
   cv::Rect leftEyeRegion(face.width*(kEyePercentSide/100.0),
                          eye_region_top,eye_region_width,eye_region_height);
+
+
   cv::Rect rightEyeRegion(face.width - eye_region_width - face.width*(kEyePercentSide/100.0),
                           eye_region_top,eye_region_width,eye_region_height);
 

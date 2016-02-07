@@ -1,25 +1,25 @@
 # The set of languages for which implicit dependencies are needed:
-set(CMAKE_DEPENDS_LANGUAGES
+SET(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Ishan/Downloads/eyeLike-master/src/findEyeCenter.cpp" "/Users/Ishan/Downloads/eyeLike-master/src/CMakeFiles/eyeLike.dir/findEyeCenter.cpp.o"
-  "/Users/Ishan/Downloads/eyeLike-master/src/findEyeCorner.cpp" "/Users/Ishan/Downloads/eyeLike-master/src/CMakeFiles/eyeLike.dir/findEyeCorner.cpp.o"
-  "/Users/Ishan/Downloads/eyeLike-master/src/helpers.cpp" "/Users/Ishan/Downloads/eyeLike-master/src/CMakeFiles/eyeLike.dir/helpers.cpp.o"
-  "/Users/Ishan/Downloads/eyeLike-master/src/main.cpp" "/Users/Ishan/Downloads/eyeLike-master/src/CMakeFiles/eyeLike.dir/main.cpp.o"
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCenter.cpp" "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles/eyeLike.dir/findEyeCenter.o"
+  "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/findEyeCorner.cpp" "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles/eyeLike.dir/findEyeCorner.o"
+  "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/helpers.cpp" "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles/eyeLike.dir/helpers.o"
+  "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/main.cpp" "/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles/eyeLike.dir/main.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/opencv"
-  "/usr/local/include"
-  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+SET(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
-# Fortran module output directory.
-set(CMAKE_Fortran_TARGET_MODULE_DIR "")
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "//include/opencv"
+  "//include"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
