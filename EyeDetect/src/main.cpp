@@ -53,7 +53,9 @@ int main( int argc, const char** argv ) {
     yres = 800;
     gazeMat = Mat(yres, xres, CV_64F, cvScalar(255));
     
-    old.y = yres - 1;
+    old.y = 0;
+    
+    bool once = false;
     
   CvCapture* capture;
   cv::Mat frame;
@@ -174,7 +176,11 @@ int main( int argc, const char** argv ) {
         
       imshow("Gaze Map", gazeMat);
       imshow(main_window_name, debugImage);
-      imshow("Comparison", comp);
+      if(comp.rows > 0)
+          imshow("Comparison", comp);
+      else if(!once){
+          printf("Failed to load comparison photo because algorithmia python file failed to produce image\n");
+      }
         
       int c = cv::waitKey(10);
       if( (char)c == 'c' ) { break; }
@@ -324,16 +330,13 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     if(abs(distInFromCenter + inHorizontal) < 6.39f){
         double ratio = (distInFromCenter + inHorizontal) / 6.39f;
         int pixelX = xres/2 + ratio * xres/2;
-        printf("%d\n", pixelX);
-        int sign = 0;
-        (rand() % 2 == 0)? sign = 1: sign = -1;
-        int y = old.y + sign * (rand() % 50);
-        if(y < 0) y = -y;
-        else if(y >= yres) y = yres - (y - yres);
+        int y = old.y + 2;
+        if(y >= yres)
+            y = yres-1;
+        
         Point2f p(pixelX, y);
         line(gazeMat, old, p, Scalar(0, 0, 0));
         old = p;
-        printf("%d, %i\n", pixelX, y);
         circle(gazeMat, p, 10, 200);
     }
     
