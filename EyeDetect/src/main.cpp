@@ -180,6 +180,7 @@ int main( int argc, const char** argv ) {
           imshow("Comparison", comp);
       else if(!once){
           printf("Failed to load comparison photo because algorithmia python file failed to produce image\n");
+          once = true;
       }
         
       int c = cv::waitKey(10);
