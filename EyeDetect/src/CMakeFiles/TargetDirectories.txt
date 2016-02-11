@@ -1,1 +1,1 @@
-/home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles/eyeLike.dir
+/home/calvin/gitclones/HackPoly-2016/EyeDetect/src/CMakeFiles/eyeLike.dir

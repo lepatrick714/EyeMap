@@ -7,12 +7,20 @@
 #include <iostream>
 #include <queue>
 #include <stdio.h>
+#include <vector>
 
 #include "constants.h"
 #include "helpers.h"
 
+using namespace cv;
+using namespace std;
 // Pre-declarations
 cv::Mat floodKillEdges(cv::Mat &mat);
+int edgeThresh = 1;
+int lowThreshold;
+int const max_lowThreshold = 100;
+int ratio = 3;
+int kernel_size = 3;
 
 #pragma mark Visualization
 /*
@@ -190,6 +198,72 @@ cv::Point findEyeCenter(cv::Mat face, cv::Rect eye, std::string debugWindow)
   }
   return unscalePoint(maxP,eye);
 }
+void CannyThreshold(Mat src)
+{
+  /// Reduce noise with a kernel 3x3
+  // blur( src, detected_edges, Size(3,3) );
+
+  /// Canny detector
+  Canny( src, src, lowThreshold, lowThreshold*ratio, kernel_size );
+
+  /// Using Canny's output as a mask, we display our result
+  // src.copyTo( dst, detected_edges);
+
+}
+
+std::vector < cv::Point > findEyeContours(cv::Mat face, cv::Rect Eye, std::string contourWin)
+{
+  cv::Mat eyeROIUnscaled = face(Eye);
+  cv::Mat eyeROI;
+  scaleToFastSize(eyeROIUnscaled, eyeROI);
+  // draw eye region
+  rectangle(face,Eye,1234);
+  cv::Mat blurred;
+  // GaussianBlur( eyeROI, weight, cv::Size( kWeightBlurSize, kWeightBlurSize ), 0, 0 );
+
+
+
+  cv::GaussianBlur(eyeROI,blurred,cv::Size( 11, 11 ),0,0);
+  CannyThreshold(blurred);
+  std::vector< std::vector <cv::Point> > contours;
+  findContours(blurred,contours,CV_RETR_LIST,CV_CHAIN_APPROX_NONE);
+
+  std::vector<double> conAreas;
+
+  for(int i = 0; i < contours.size(); ++i)
+  {
+    conAreas.push_back(contourArea(contours.at(i)));
+  }
+  //
+  // //REMOVING CONTOURS WITH SIZE LESS THAN 60
+  std::vector< vector<cv::Point> > useablecons;
+
+  for(int i =0; i < conAreas.size(); ++i)
+  {
+    if(conAreas.at(i) >=5.0)//will need to adjust
+    {
+      useablecons.push_back(contours.at(i));
+
+    }
+  }
+
+  Mat cons = Mat::zeros(blurred.rows, blurred.cols, CV_8UC3);
+  Scalar white(255,0,255);
+
+
+
+  drawContours(cons,useablecons,-1,white,.001,LINE_8,noArray());
+
+
+  cv::imshow(contourWin,blurred);
+  imwrite("LeftEyecon.jpg",blurred);
+  imwrite("contours.jpg",cons);
+  std::vector < cv::Point > ps;
+
+  return ps;
+}
+
+
 
 #pragma mark Postprocessing
 

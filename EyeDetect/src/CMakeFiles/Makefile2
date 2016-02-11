@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src
+CMAKE_SOURCE_DIR = /home/calvin/gitclones/HackPoly-2016/EyeDetect/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src
+CMAKE_BINARY_DIR = /home/calvin/gitclones/HackPoly-2016/EyeDetect/src
 
 #=============================================================================
 # Target rules for target CMakeFiles/eyeLike.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src
 CMakeFiles/eyeLike.dir/all:
 	$(MAKE) -f CMakeFiles/eyeLike.dir/build.make CMakeFiles/eyeLike.dir/depend
 	$(MAKE) -f CMakeFiles/eyeLike.dir/build.make CMakeFiles/eyeLike.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles  1 2 3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/calvin/gitclones/HackPoly-2016/EyeDetect/src/CMakeFiles  1 2 3 4
 	@echo "Built target eyeLike"
 .PHONY : CMakeFiles/eyeLike.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/eyeLike.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/eyeLike.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/gitclones/HackPoly-2016/EyeDetect/src/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/eyeLike.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/gitclones/HackPoly-2016/eyeLike-master/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/calvin/gitclones/HackPoly-2016/EyeDetect/src/CMakeFiles 0
 .PHONY : CMakeFiles/eyeLike.dir/rule
 
 # Convenience name for target.

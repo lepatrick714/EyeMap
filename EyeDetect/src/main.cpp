@@ -43,20 +43,20 @@ int main( int argc, const char** argv ) {
 //    printf("Please input if you are wearing glasses\n");
 //    std::string input;
 //    std::getline(std::cin, input);
-//    
+//
 //    if(input == "Yes")
 //        face_cascade_name = "haarcascade_eye_tree_eyeglasses.xml";
 //    else
   face_cascade_name = "haarcascade_frontalface_alt.xml";
-    
+
     xres = 1280;
     yres = 800;
     gazeMat = Mat(yres, xres, CV_64F, cvScalar(255));
-    
+
     old.y = 0;
-    
+
     bool once = false;
-    
+
   CvCapture* capture;
   cv::Mat frame;
     Mat comp = imread("result.png", 1);
@@ -89,14 +89,14 @@ int main( int argc, const char** argv ) {
 //    calibrateright = false;
 //  double tstart = 0.0;
 //  double t = 0.0;
-    
+
   if( capture ) {
       // tstart = (double)getTickCount();
     while( true ) {
       frame = cv::cvarrToMat(cvQueryFrame( capture ));
 //        if(calibrate){
 //            putText(frame, "Look at Mid", cvPoint(30,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, cvScalar(200,200,250), 1, CV_AA);
-//            
+//
 //            printf("Calibrate Mid\n");
 //            t = 1000*((double)getTickCount() - tstart) / getTickFrequency();
 //            calibrate = t < 3000;
@@ -105,21 +105,21 @@ int main( int argc, const char** argv ) {
 //                for(int i = 0; i < ys.size(); i++)
 //                    aveY+=ys[i];
 //                aveY = aveY / ys.size();
-//                
+//
 //                offy = -1 * aveY;
-//                
+//
 //                float aveX = 0;
 //                for(int i = 0; i < xs.size(); i++)
 //                    aveX+=xs[i];
 //                aveX = aveX / xs.size();
-//                
+//
 //                offx = -1 * aveX;
 //                calibratetop = true;
 //                ys.clear();
 //                xs.clear();
 //            }
 //        }
-//        
+//
 //        else if(calibratetop){
 //            printf("Calibrate Top\n");
 //            t = 1000*((double)getTickCount() - tstart) / getTickFrequency();
@@ -129,9 +129,9 @@ int main( int argc, const char** argv ) {
 //                for(int i = 0; i < ys.size(); i++)
 //                    aveY+=(ys[i]+offy);
 //                aveY = aveY / ys.size();
-//                
+//
 //                ymax = aveY;
-//                
+//
 //                calibrateright = true;
 //                ys.clear();
 //                xs.clear();
@@ -139,7 +139,7 @@ int main( int argc, const char** argv ) {
 //                printf("offx = %f, offy = %f, xmax = %f, ymax = %f\n", offx, offy, xmax, ymax);
 //            }
 //        }
-//        
+//
 //        else if(calibrateright){
 //            printf("Calibrate Right\n");
 //            t = 1000*((double)getTickCount() - tstart) / getTickFrequency();
@@ -149,17 +149,17 @@ int main( int argc, const char** argv ) {
 //                for(int i = 0; i < xs.size(); i++)
 //                    aveX+=(xs[i]+offx);
 //                aveX = aveX / xs.size();
-//                
+//
 //                xmax = aveX;
-//                
+//
 //                ys.clear();
 //                xs.clear();
 //                printf("Done Calibrating\n");
 //                printf("offx = %f, offy = %f, xmax = %f, ymax = %f\n", offx, offy, xmax, ymax);
 //            }
 //        }
-        
-        
+
+
       // mirror it
       cv::flip(frame, frame, 1);
       frame.copyTo(debugImage);
@@ -173,7 +173,7 @@ int main( int argc, const char** argv ) {
         printf(" --(!) No captured frame -- Break!");
         break;
       }
-        
+
       imshow("Gaze Map", gazeMat);
       imshow(main_window_name, debugImage);
       if(comp.rows > 0)
@@ -182,14 +182,14 @@ int main( int argc, const char** argv ) {
           printf("Failed to load comparison photo because algorithmia python file failed to produce image\n");
           once = true;
       }
-        
+
       int c = cv::waitKey(10);
       if( (char)c == 'c' ) { break; }
 
     }
-      
+
   }
-    
+
     printf("%i, %i\n", xres, gazeMat.cols);
 //
 //    gazeMat.at<float>(50, 100) = 0;
@@ -230,6 +230,7 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
   //-- Find Eye Centers
   cv::Point leftPupil = findEyeCenter(faceROI,leftEyeRegion,"Left Eye");
   cv::Point rightPupil = findEyeCenter(faceROI,rightEyeRegion,"Right Eye");
+  std::vector<cv::Point> leftCon = findEyeContours(faceROI,leftEyeRegion,"Left Eye Con");
   // get corner regions
   cv::Rect leftRightCornerRegion(leftEyeRegion);
   leftRightCornerRegion.width -= leftPupil.x;
@@ -275,47 +276,47 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
     cv::Point2f rightRightCorner = findEyeCorner(faceROI(rightRightCornerRegion), false, false);
     rightRightCorner.x += rightRightCornerRegion.x;
     rightRightCorner.y += rightRightCornerRegion.y;
-    
+
     float yDiff = -1*(face.y + leftRightCorner.y - yLine);
     //printf("%f\n", yDiff);
-    
+
     float correction = 0.0f;
-    
+
     if(yDiff > 100){
         correction = (yDiff - 100) / (13.0f);
     }
-    
+
     rightLeftCorner.y -= correction;
     rightRightCorner.y -= correction;
     leftRightCorner.y -= correction;
     leftLeftCorner.y -= correction;
-    
+
     circle(faceROI, leftRightCorner, 3, 200);
     circle(faceROI, leftLeftCorner, 3, 200);
     circle(faceROI, rightLeftCorner, 3, 200);
     circle(faceROI, rightRightCorner, 3, 200);
-    
+
     cv::Point2f centerLeft(leftLeftCorner.x - (leftLeftCorner.x - leftRightCorner.x) / 2, leftLeftCorner.y +(leftLeftCorner.y - leftRightCorner.y) / 2);
     circle(debugFace, centerLeft, 3, 1234);
-    
+
     cv::Point2f centerRight(rightLeftCorner.x - (rightLeftCorner.x - rightRightCorner.x) / 2, rightLeftCorner.y +(rightLeftCorner.y - rightRightCorner.y) / 2);
     circle(debugFace, centerRight, 3, 1234);
-    
+
     cv::Point2f centerFace(face.x + face.width / 2, face.y + leftRightCorner.y);
     cv::Point2f centerCam(frame_gray.cols/2, frame_gray.rows/2);
     cv::Point2f diff(centerFace.x - centerCam.x, centerFace.y - centerCam.y);
     //printf("%f, %f\n", centerFace.x - centerCam.x, centerFace.y - centerCam.y);
-    
+
     float dist = log2f(2240000 / (face.width * face.height)) * 0.5f;
 //    printf("Distance %f\n", dist);
-    
+
     int div = 6;
 //    printf("Center Left X: %f\n", centerLeft.x);
     float angle = (int)((leftPupil.x - centerLeft.x) / (centerLeft.x - leftLeftCorner.x) * 100);
     float angle2 = (int)((rightPupil.x - centerRight.x) / (rightRightCorner.x - centerRight.x) * 100);
     angle = (angle + angle2) / 2;
-    
-    
+
+
 //    printf("Angle: %f\n", angle);
 //    printf("Diff: %f\n", diff.x);
 //    printf("Pupil X: %d\n", leftPupil.x);
@@ -327,25 +328,25 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
 //    printf("Distance from your center: %f\n", distInFromCenter);
     double inHorizontal = diff.x / 640.0;
 //    printf("Hoizontal Inches: %f\n", inHorizontal);
-    
+
     if(abs(distInFromCenter + inHorizontal) < 6.39f){
         double ratio = (distInFromCenter + inHorizontal) / 6.39f;
         int pixelX = xres/2 + ratio * xres/2;
         int y = old.y + 2;
         if(y >= yres)
             y = yres-1;
-        
+
         Point2f p(pixelX, y);
         line(gazeMat, old, p, Scalar(0, 0, 0));
         old = p;
         circle(gazeMat, p, 10, 200);
     }
-    
-    
+
+
     //70,000 at 2.5 feet
     //140,000 at 2 ft.
     //2,240,000
-    
+
 //    if(calibrate || calibratetop || calibrateright){
 //        float rightYDiff = -(rightPupil.y - centerRight.y);
 //        float rightXDiff = rightPupil.x - centerRight.x;
@@ -354,20 +355,20 @@ void findEyes(cv::Mat frame_gray, cv::Rect face) {
 //        imshow(face_window_name, faceROI);
 //        return;
 //    }
-    
+
 //    float rightYDiff = -(rightPupil.y - centerRight.y);
 //    float rightXDiff = rightPupil.x - centerRight.x + offx;
-//    
+//
 //    float rightYRatio = rightYDiff / ymax;
 //    float pixelY = yres/2 + rightYRatio * yres/2;
-//    
-//    
+//
+//
 //    float rightXRatio = rightXDiff / xmax;
 //    float pixelX = xres/2 + rightXRatio * xres/2;
-    
+
 
     // printf("%f, %f\n", pixelX, pixelY);
-    
+
     imshow(face_window_name, faceROI);
 }
 
