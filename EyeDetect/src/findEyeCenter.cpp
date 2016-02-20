@@ -223,7 +223,7 @@ std::vector < cv::Point > findEyeContours(cv::Mat face, cv::Rect Eye, std::strin
 
 
 
-  cv::GaussianBlur(eyeROI,blurred,cv::Size( 11, 11 ),0,0);
+  cv::GaussianBlur(eyeROI,blurred,cv::Size( 1, 1 ),0,0);
   CannyThreshold(blurred);
   std::vector< std::vector <cv::Point> > contours;
   findContours(blurred,contours,CV_RETR_LIST,CV_CHAIN_APPROX_NONE);
@@ -240,7 +240,7 @@ std::vector < cv::Point > findEyeContours(cv::Mat face, cv::Rect Eye, std::strin
 
   for(int i =0; i < conAreas.size(); ++i)
   {
-    if(conAreas.at(i) >=5.0)//will need to adjust
+    if(conAreas.at(i) <=3.2)//will need to adjust
     {
       useablecons.push_back(contours.at(i));
 
@@ -248,15 +248,16 @@ std::vector < cv::Point > findEyeContours(cv::Mat face, cv::Rect Eye, std::strin
   }
 
   Mat cons = Mat::zeros(blurred.rows, blurred.cols, CV_8UC3);
-  Scalar white(255,0,255);
+  Scalar white(255,255,255);
 
 
 
   drawContours(cons,useablecons,-1,white,.001,LINE_8,noArray());
 
 
-  cv::imshow(contourWin,blurred);
-  imwrite("LeftEyecon.jpg",blurred);
+  cv::imshow(contourWin,eyeROI);
+  cv::imshow("contoursEye",cons);
+  imwrite("LeftEyecon.jpg",eyeROI);
   imwrite("contours.jpg",cons);
   std::vector < cv::Point > ps;
 
